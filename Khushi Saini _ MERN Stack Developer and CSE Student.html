@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khushi Saini | MERN Stack Developer and CSE Student</title>
+<meta name="description" content="Khushi Saini is a B.Tech CSE student building MERN stack web applications, with a foundation in Java, C and data structures.">
+<meta property="og:title" content="Khushi Saini | MERN Stack Developer and CSE Student">
+<meta property="og:description" content="B.Tech CSE student building web applications with MongoDB, Express, React and Node.js.">
+<meta property="og:type" content="website">
+<meta name="author" content="Khushi Saini">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#090b10">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Khushi Saini","jobTitle":"B.Tech CSE student and MERN stack developer","alumniOf":"Quantum University","sameAs":["https://www.linkedin.com/in/khushi-saini-598290291","https://leetcode.com/u/CSE27/"]}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0d12'/%3E%3Ctext x='32' y='43' font-size='32' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%2367e8f9'%3EKS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f7fb;--surface:#ffffff;--line:#dfe2ec;--text:#14161f;--muted:#4f5568;
+  --accent:#0e7490;--accent2:#6d4ae0;--glow:rgba(14,116,144,.12);
+  --r:14px;--font:"Geist",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#090b10;--surface:#10131b;--line:#222735;--text:#eef1f8;--muted:#9aa3b8;
+    --accent:#67e8f9;--accent2:#a78bfa;--glow:rgba(103,232,249,.10);color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#090b10;--surface:#10131b;--line:#222735;--text:#eef1f8;--muted:#9aa3b8;
+  --accent:#67e8f9;--accent2:#a78bfa;--glow:rgba(103,232,249,.10);color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--text);font:400 1rem/1.65 var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+a{color:inherit}
+.skip{position:absolute;left:-999px;top:.5rem;z-index:100}.skip:focus{left:1rem}
+main:focus{outline:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1080px,100% - 2.5rem);margin-inline:auto}
+section{padding:5.5rem 0}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:600}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:.6rem}
+.lead{color:var(--muted);max-width:60ch}
+.sec-head{margin-bottom:2.2rem}
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem}
+.mark{font-weight:700;text-decoration:none;letter-spacing:-.02em;display:inline-flex;align-items:center;min-height:44px}
+.links{display:flex;gap:.25rem;list-style:none;padding:0}
+.links a{display:flex;align-items:center;min-height:44px;padding:.5rem .8rem;border-radius:8px;text-decoration:none;color:var(--muted);font-size:.93rem}
+.links a:hover{color:var(--text)}
+.links a.active{color:var(--text);background:var(--glow)}
+.right{display:flex;gap:.5rem;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:44px;padding:.6rem 1.1rem;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:500 .95rem var(--font);text-decoration:none;cursor:pointer;transition:transform .15s,border-color .15s}
+.btn:hover{border-color:var(--accent);transform:translateY(-1px)}
+.btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));border:0;color:#06080d;font-weight:600}
+:root:not([data-theme="dark"]) .btn.primary{color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary{color:#06080d}}
+.icon-btn{width:44px;padding:0}
+#menu{display:none}
+@media (max-width:980px){
+  .links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--bg);border-bottom:1px solid var(--line);padding:.75rem 1.25rem 1rem}
+  .links.open{display:flex}
+  .links a{padding:.8rem}
+  #menu{display:inline-flex}
+  .cta-nav{display:none}
+}
+/* hero */
+.hero{padding:3.5rem 0 3rem;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:640px;height:640px;background:radial-gradient(circle,var(--glow),transparent 65%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center;position:relative}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.hello{color:var(--accent);font-weight:500;margin-bottom:1rem}
+h1{font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:1.2rem;max-width:20ch}
+.hero p.lead{font-size:1.1rem;margin-bottom:1.8rem}
+.row{display:flex;flex-wrap:wrap;gap:.7rem}
+.socials{margin-top:1.4rem}
+.socials a{color:var(--muted);font-size:.93rem;padding:.5rem .2rem;display:inline-flex;align-items:center;min-height:44px;margin-right:1rem}
+.socials a:hover{color:var(--accent)}
+.flow{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.4rem;box-shadow:0 24px 60px -30px rgba(0,0,0,.4)}
+.flow small{color:var(--muted);display:block;margin-bottom:1rem}
+.node{flex-wrap:wrap;border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;background:var(--bg)}
+.node b{font-weight:600}.node span{color:var(--muted);font-size:.88rem;text-align:right}
+.wire{width:2px;height:22px;margin:0 auto;background:linear-gradient(var(--accent),var(--accent2));position:relative;overflow:hidden}
+.wire::after{content:"";position:absolute;left:0;width:100%;height:8px;background:var(--bg);animation:pulse 2.2s linear infinite}
+@keyframes pulse{from{top:-8px}to{top:22px}}
+.scroll{display:flex;justify-content:center;margin-top:3rem}
+.scroll a{color:var(--muted);text-decoration:none;font-size:.85rem;padding:.5rem;display:inline-flex;align-items:center;min-height:44px}
+/* cards */
+.grid{display:grid;gap:1.1rem}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.g3{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.g2,.g3{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.4rem}
+.card h3{font-size:1.1rem;margin-bottom:.4rem}
+.card p{color:var(--muted);font-size:.96rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.9rem;list-style:none;padding:0}
+.tags li{border:1px solid var(--line);border-radius:999px;padding:.2rem .7rem;font-size:.84rem;color:var(--muted)}
+.proj{display:flex;flex-direction:column}
+.proj .btn{margin-top:auto;align-self:flex-start}
+.proj .tags{margin-bottom:1.1rem}
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:2.5rem}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+.about p+p{margin-top:1rem}
+.facts{display:grid;gap:1rem;align-content:start}
+.facts div{border-left:2px solid var(--accent);padding-left:1rem}
+.facts b{display:block;font-weight:600}.facts span{color:var(--muted);font-size:.93rem}
+/* timeline */
+.role{border-left:2px solid var(--line);padding:0 0 0 1.5rem;position:relative}
+.role::before{content:"";position:absolute;left:-7px;top:.4rem;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.role .meta{color:var(--muted);font-size:.93rem;margin:.2rem 0 .9rem}
+.role ul{padding-left:1.1rem;color:var(--muted)}.role li{margin-bottom:.35rem}
+.note{color:var(--muted);font-size:.88rem;margin-top:1rem}
+.edu{display:grid;gap:1rem}
+.edu .card{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.edu .big{font-size:1.4rem;font-weight:600;color:var(--accent)}
+/* modal */
+dialog{border:1px solid var(--line);border-radius:18px;background:var(--surface);color:var(--text);padding:0;width:min(680px,100% - 1.5rem);max-height:88vh;margin:auto}
+dialog::backdrop{background:rgba(3,5,9,.7)}
+dialog[open]{animation:pop .2s ease-out}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}}
+.dl{padding:1.6rem;overflow:auto;max-height:88vh}
+.dl h3{font-size:1.5rem;margin:0 0 .3rem}.dl h4{margin:1.4rem 0 .4rem;font-size:1rem}
+.dl p,.dl li{color:var(--muted)}.dl ul{padding-left:1.1rem}
+.dl .x{float:right}
+/* form */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:2.5rem}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+.stack{display:grid;gap:.8rem;margin-top:1.4rem}
+label{display:block;font-weight:500;font-size:.93rem;margin-bottom:.3rem}
+input,textarea{width:100%;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:.75rem .9rem;font:inherit;min-height:44px}
+textarea{min-height:130px;resize:vertical}
+.err{color:color-mix(in srgb,#e5484d 70%,var(--text));font-size:.85rem;min-height:1.2em;margin-top:.2rem}
+[aria-invalid="true"]{border-color:#e5484d}
+form{display:grid;gap:.9rem}
+#status{font-size:.93rem;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:2.2rem 0 3rem;color:var(--muted);font-size:.93rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1.2rem 2rem;justify-content:space-between}
+footer a{text-decoration:none;padding:.3rem .2rem;display:inline-flex;align-items:center;min-height:44px}footer a:hover{color:var(--accent)}
+#top{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}
+#top.show{opacity:1;pointer-events:auto}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.wire::after{display:none}
+}
+</style>
+</head>
+<body>
+<a href="#main" class="btn skip">Skip to content</a>
+<header>
+  <nav class="wrap nav" aria-label="Main">
+    <a class="mark" href="#home">Khushi Saini</a>
+    <ul class="links" id="links"></ul>
+    <div class="right">
+      <button class="btn icon-btn" id="theme" aria-label="Toggle light and dark theme">◐</button>
+      <a class="btn primary cta-nav" href="#contact">Let’s connect</a>
+      <button class="btn icon-btn" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="links">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+<section class="hero" id="home" data-nav>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="hello">Hi, I’m Khushi Saini.</p>
+        <h1>Full-stack web apps, from the React interface to the MongoDB database.</h1>
+        <p class="lead" id="heroLead"></p>
+        <div class="row">
+          <a class="btn primary" href="#projects">Explore my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <div class="socials" id="heroSocials"></div>
+        <ul class="tags" aria-label="Highlights"><li>B.Tech CSE, 2027</li><li>CGPA 7.9 / 10</li><li>Web Developer Intern, CODSOFT</li></ul>
+      </div>
+      <div class="flow" aria-label="Technology stack of the Dairy Shield project">
+        <small>Dairy Shield, my MERN e-commerce project</small>
+        <div class="node"><b>React</b><span>Interface</span></div>
+        <div class="wire"></div>
+        <div class="node"><b>Express + Node.js</b><span>Server</span></div>
+        <div class="wire"></div>
+        <div class="node"><b>MongoDB</b><span>Database</span></div>
+        <p class="note">Inventory and expiry tracking, plus spoilage loss records.</p>
+      </div>
+    </div>
+    <div class="scroll"><a href="#about" aria-label="Scroll to About">Scroll ↓</a></div>
+  </div>
+</section>
+
+<section id="about" data-nav>
+  <div class="wrap about rv">
+    <div>
+      <div class="sec-head"><h2>About</h2></div>
+      <p>I’m a B.Tech Computer Science and Engineering student at Quantum University, Roorkee, graduating in 2027. I build full-stack web applications with the MERN stack, and I have a base in Java and C with training in data structures and algorithms.</p>
+      <p>My projects solve concrete problems: preventing expired dairy products from being sold, tracking spoilage losses, and managing hotel room allocation with persistent records. Alongside coursework I have trained in data structures and algorithms, competitive coding and prompt engineering.</p>
+    </div>
+    <div class="facts" id="facts"></div>
+  </div>
+</section>
+
+<section id="skills" data-nav>
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Skills</h2><p class="lead">Technologies I have used in coursework, training and projects.</p></div>
+    <div class="grid g3" id="skillGrid"></div>
+  </div>
+</section>
+
+<section id="projects" data-nav>
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Projects</h2><p class="lead">Three projects, from a C data-structures system to a full-stack e-commerce site.</p></div>
+    <div class="grid g3" id="projGrid"></div>
+  </div>
+</section>
+
+<section id="experience" data-nav>
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Experience</h2></div>
+    <div id="roles"></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Education</h2></div>
+    <div class="edu" id="edu"></div>
+  </div>
+</section>
+
+<section id="credentials">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Certifications and achievements</h2></div>
+    <div class="grid g2" id="certs"></div>
+  </div>
+</section>
+
+<section id="profiles">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Coding profiles</h2><p class="lead">My public profiles. I don’t display problem counts or ratings here until they can be pulled from the source.</p></div>
+    <div class="grid g2" id="profGrid"></div>
+  </div>
+</section>
+
+<section id="contact" data-nav>
+  <div class="wrap contact">
+    <div class="rv">
+      <h2>Let’s talk</h2>
+      <p class="lead">I’m looking for internship and entry-level software roles. Send a message or reach out directly.</p>
+      <div class="stack">
+        <div class="row"><a class="btn" id="mailLink" href="#"></a><button class="btn" id="copy" type="button">Copy email</button></div>
+        <div id="contactLinks" class="row"></div>
+        <p id="copyMsg" role="status" class="note"></p>
+      </div>
+    </div>
+    <form id="form" class="card rv" novalidate>
+      <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required><div class="err" id="e-name"></div></div>
+      <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><div class="err" id="e-email"></div></div>
+      <div><label for="subject">Subject</label><input id="subject" name="subject" required><div class="err" id="e-subject"></div></div>
+      <div><label for="message">Message</label><textarea id="message" name="message" required></textarea><div class="err" id="e-message"></div></div>
+      <button class="btn primary" type="submit" id="send">Open in my email app</button>
+      <p id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b style="color:var(--text)">Khushi Saini</b><br>Thanks for visiting.</div>
+    <nav aria-label="Footer" id="footLinks" class="row"></nav>
+    <div id="year"></div>
+  </div>
+</footer>
+<button class="btn icon-btn" id="top" aria-label="Back to top">↑</button>
+
+<dialog id="dlg" aria-labelledby="dt"><div class="dl" id="dbody"></div></dialog>
+
+<script>
+/* ---------- Edit your content here ---------- */
+const DATA = {
+  name: "Khushi Saini",
+  email: "khushisaini.9719@gmail.com",
+  location: "Saharanpur, Uttar Pradesh",
+  linkedin: "https://www.linkedin.com/in/khushi-saini-598290291",
+  leetcode: "https://leetcode.com/u/CSE27/",
+  github: "", // TO CONFIRM: add your real GitHub profile URL to show it everywhere
+  intro: "B.Tech CSE student (2027) working with MongoDB, Express, React and Node.js, with a solid base in Java, C and data structures.",
+  facts: [
+    ["CGPA 7.9 / 10", "Up to 6th semester, no active backlogs"],
+    ["MERN stack", "Responsive interfaces and REST APIs"],
+    ["DSA and competitive coding", "Trained at DUCAT and Quantum School of Technology"],
+    ["3rd rank, Cyber Quiz", "Cyber Hunter Workshop, Quantum University, 2025"]
+  ],
+  skills: [
+    ["Languages", ["Java (OOPs)", "C", "Python (basic)"]],
+    ["Web (MERN)", ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express.js", "MongoDB"]],
+    ["Databases", ["SQL", "MySQL"]],
+    ["Tools", ["Git", "GitHub", "IntelliJ IDEA", "Visual Studio Code"]],
+    ["AI", ["Prompt engineering (Google Prompting Essentials)"]],
+    ["Spoken languages", ["Hindi", "English"]]
+  ],
+  projects: [
+    { name: "Dairy Shield", tag: "E-commerce website",
+      summary: "A dairy e-commerce site that stops expired products from being sold and tracks spoilage losses.",
+      stack: ["HTML","CSS","JavaScript","React","MongoDB","Express","Node.js"],
+      problem: "Dairy products such as milk, curd and paneer spoil quickly. Sellers need to avoid selling expired stock and to know what spoilage costs them.",
+      solution: "A web store that manages dairy products with inventory and expiry tracking, plus a spoilage module that records damaged items.",
+      features: ["Product management for milk, curd and paneer","Inventory management and expiry tracking that prevents sale of expired products","Spoilage management that records damaged products and calculates financial losses"],
+      arch: "Built with React, Node.js, Express and MongoDB.",
+      next: "Add the repository and deployed links here when ready." },
+    { name: "Hotel Management System", tag: "Console application in C",
+      summary: "A console-based system for room booking, guest check-in and check-out, and billing.",
+      stack: ["C","Data structures","File handling"],
+      problem: "Hotel front-desk work such as room allocation, waiting lists and billing needs to be automated and kept between program runs.",
+      solution: "A console program that handles room booking, check-in and check-out, and billing, and saves records to files.",
+      features: ["Room booking, guest check-in and check-out, and billing","Dynamic data structures for room allocations and waiting lists","File handling (I/O) to persist guest records and transaction history across sessions"],
+      arch: "Console program in C with dynamic data structures in memory and file-based storage for records.",
+      next: "Add the repository link here when ready." },
+    { name: "Animated Calculator", tag: "Front-end project",
+      summary: "An interactive calculator with smooth animations and real-time results.",
+      stack: ["HTML","CSS","JavaScript"],
+      problem: "The goal was an interactive calculator with a clear, responsive interface that shows accurate results in real time.",
+      solution: "An animated calculator that performs basic arithmetic and shows results as the user types.",
+      features: ["Basic arithmetic operations","Smooth animations and interactive buttons","Responsive styling","JavaScript input handling with real-time display of results"],
+      arch: "Static page: HTML structure, CSS styling and animation, JavaScript logic.",
+      next: "Add the repository and demo links here when ready." }
+  ],
+  roles: [
+    { org: "CODSOFT", title: "Web Developer Intern", mode: "Remote", dates: "July – Sep (year to confirm)",
+      points: ["Built responsive web pages with HTML, CSS and JavaScript.","Designed and implemented user-friendly website interfaces.","Worked on website functionality and improved user experience.","Tested and debugged pages to confirm they work across devices.","Gained hands-on experience in front-end development and web design practice."],
+      tech: ["HTML","CSS","JavaScript"] }
+  ],
+  edu: [
+    ["B.Tech, Computer Science and Engineering", "Quantum University, Roorkee, Uttarakhand", "Aug 2023 – July 2027 (expected)", "CGPA 7.9 / 10"],
+    ["Class XII, CBSE", "Motherland Public School, Rampur Maniharan, Saharanpur", "2023", "68%"],
+    ["Class X, CBSE", "Motherland Public School, Rampur Maniharan, Saharanpur", "2021", "77%"]
+  ],
+  certs: [
+    ["Google Prompting Essentials Specialization", "Google and Coursera", "2026", "Certification"],
+    ["Data Structures and Algorithms", "DUCAT", "2025", "Training"],
+    ["Competitive Coding Skills", "Quantum School of Technology", "2025", "Training"],
+    ["International Conference", "IIT Roorkee", "2026", "Workshop participation"],
+    ["3rd rank, Cyber Quiz Competition", "Cyber Hunter Workshop (Hard-Hacks v0x1), Quantum University", "2025", "Achievement"],
+    ["Coding Ninjas 10X Hackathon", "Coding Ninjas", "2025", "Participation"]
+  ]
+};
+/* ---------- Rendering ---------- */
+const $ = s => document.querySelector(s);
+const el = (t, c, h) => { const e = document.createElement(t); if (c) e.className = c; if (h !== undefined) e.innerHTML = h; return e; };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ext = 'target="_blank" rel="noopener noreferrer"';
+const ul = a => `<ul class="tags">${a.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
+
+const nav = [["Home","home"],["About","about"],["Skills","skills"],["Projects","projects"],["Experience","experience"],["Contact","contact"]];
+$("#links").innerHTML = nav.map(([l,id])=>`<li><a href="#${id}" data-id="${id}">${l}</a></li>`).join("");
+$("#footLinks").innerHTML = nav.map(([l,id])=>`<a href="#${id}">${l}</a>`).join("");
+
+$("#heroLead").textContent = DATA.intro;
+const socials = [["LinkedIn",DATA.linkedin],["LeetCode",DATA.leetcode],["GitHub",DATA.github]].filter(x=>x[1]);
+$("#heroSocials").innerHTML = socials.map(([l,u])=>`<a href="${u}" ${ext}>${l}</a>`).join("");
+$("#contactLinks").innerHTML = socials.map(([l,u])=>`<a class="btn" href="${u}" ${ext}>${l}</a>`).join("");
+$("#facts").innerHTML = DATA.facts.map(([a,b])=>`<div><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join("");
+$("#skillGrid").innerHTML = DATA.skills.map(([t,a])=>`<div class="card rv"><h3>${t}</h3>${ul(a)}</div>`).join("");
+$("#projGrid").innerHTML = DATA.projects.map((p,i)=>`<article class="card proj rv"><h3>${esc(p.name)}</h3><p>${esc(p.summary)}</p>${ul(p.stack)}<button class="btn" data-p="${i}" type="button">View details</button></article>`).join("");
+$("#roles").innerHTML = DATA.roles.map(r=>`<article class="role rv"><h3>${esc(r.title)}, ${esc(r.org)}</h3><div class="meta">${esc(r.mode)} | ${esc(r.dates)}</div><ul>${r.points.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>${ul(r.tech)}</article>`).join("");
+$("#edu").innerHTML = DATA.edu.map(e=>`<div class="card rv"><div><h3>${esc(e[0])}</h3><p>${esc(e[1])}</p><p>${esc(e[2])}</p></div><div class="big">${esc(e[3])}</div></div>`).join("");
+$("#certs").innerHTML = DATA.certs.map(c=>`<div class="card rv"><h3>${esc(c[0])}</h3><p>${esc(c[1])}, ${esc(c[2])}</p>${ul([c[3]])}</div>`).join("");
+$("#profGrid").innerHTML = socials.map(([l,u])=>`<a class="card rv" style="text-decoration:none" href="${u}" ${ext}><h3>${l}</h3><p>${u.replace("https://","")}</p></a>`).join("");
+$("#mailLink").textContent = DATA.email; $("#mailLink").href = "mailto:" + DATA.email;
+$("#year").textContent = "© " + new Date().getFullYear() + " " + DATA.name;
+
+/* project modal */
+const dlg = $("#dlg");
+$("#projGrid").addEventListener("click", e => {
+  const b = e.target.closest("[data-p]"); if (!b) return;
+  const p = DATA.projects[b.dataset.p];
+  $("#dbody").innerHTML = `<button class="btn icon-btn x" id="close" aria-label="Close details">✕</button><h3 id="dt">${esc(p.name)}</h3><p>${esc(p.tag)}</p>
+  <h4>Problem</h4><p>${esc(p.problem)}</p><h4>Solution</h4><p>${esc(p.solution)}</p>
+  <h4>Features</h4><ul>${p.features.map(f=>`<li>${esc(f)}</li>`).join("")}</ul>
+  <h4>Architecture</h4><p>${esc(p.arch)}</p><h4>Tech stack</h4>${ul(p.stack)}
+  <h4>Links</h4><p>Source code: coming soon. Live demo: coming soon.</p><p class="note">${esc(p.next)}</p>`;
+  dlg.showModal(); $("#close").focus();
+});
+dlg.addEventListener("click", e => { if (e.target === dlg || e.target.closest("#close")) dlg.close(); });
+
+/* nav, theme, scroll */
+const menu = $("#menu"), links = $("#links");
+menu.onclick = () => { const o = links.classList.toggle("open"); menu.setAttribute("aria-expanded", o); };
+links.addEventListener("click", e => { if (e.target.closest("a")) { links.classList.remove("open"); menu.setAttribute("aria-expanded", false); } });
+addEventListener("keydown", e => { if (e.key === "Escape" && links.classList.contains("open")) { links.classList.remove("open"); menu.setAttribute("aria-expanded", false); menu.focus(); } });
+$("#theme").onclick = () => {
+  const r = document.documentElement;
+  r.dataset.theme = (r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme:dark)").matches) ? "light" : "dark";
+};
+const navObs = new IntersectionObserver(es => es.forEach(en => {
+  if (en.isIntersecting) document.querySelectorAll(".links a").forEach(a => a.classList.toggle("active", a.dataset.id === en.target.id));
+}), { rootMargin: "-45% 0px -50% 0px" });
+document.querySelectorAll("main section[id]").forEach(s => navObs.observe(s));
+const rvObs = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); rvObs.unobserve(en.target); } }), { threshold: .12 });
+document.querySelectorAll(".rv").forEach(e => rvObs.observe(e));
+const toTop = $("#top");
+addEventListener("scroll", () => toTop.classList.toggle("show", scrollY > 700), { passive: true });
+toTop.onclick = () => scrollTo({ top: 0 });
+
+/* copy email */
+$("#copy").onclick = async () => {
+  try { await navigator.clipboard.writeText(DATA.email); $("#copyMsg").textContent = "Email copied to clipboard."; }
+  catch { $("#copyMsg").textContent = "Couldn’t copy automatically. Select the address above and copy it."; }
+};
+
+/* contact form: validates, then opens the visitor's email app (no server needed) */
+const f = $("#form");
+["name", "email", "subject", "message"].forEach(k => f.elements[k].setAttribute("aria-describedby", "e-" + k));
+f.addEventListener("submit", e => {
+  e.preventDefault();
+  const v = Object.fromEntries(new FormData(f)); let ok = true;
+  const rules = { name: v.name.trim() ? "" : "Enter your name.",
+    email: !v.email.trim() ? "Enter your email address." : /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email) ? "" : "Enter a valid email, like name@example.com.",
+    subject: v.subject.trim() ? "" : "Enter a subject.", message: v.message.trim().length >= 10 ? "" : "Write a message of at least 10 characters." };
+  for (const k in rules) { $("#e-" + k).textContent = rules[k]; f[k].setAttribute("aria-invalid", !!rules[k]); if (rules[k]) ok = false; }
+  if (!ok) { f.querySelector('[aria-invalid="true"]').focus(); return; }
+  const body = `${v.message}\n\nFrom: ${v.name} (${v.email})`;
+  $("#status").textContent = "Your email app should open with the message ready to send. If nothing opens, copy my address above.";
+  location.href = `mailto:${DATA.email}?subject=${encodeURIComponent(v.subject)}&body=${encodeURIComponent(body)}`;
+});
+</script>
+</body>
+</html>
